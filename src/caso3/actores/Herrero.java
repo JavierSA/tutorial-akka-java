@@ -36,7 +36,7 @@ public class Herrero extends UntypedActor {
         } else if (o == Mensaje.MATERIALES) {
             log.info("[Herrero] está creando espada...");
             crearEspada();
-            log.info("[Herrero] ha creado espada...");
+            log.info("[Herrero] ha creado espada.");
             if (!espadachines.isEmpty()) {
                 espadachines.get(0).tell(Espadachin.Mensaje.ESPADA_NUEVA, getSelf());
                 espadachines.remove(0);
